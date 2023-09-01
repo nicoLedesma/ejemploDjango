@@ -1,0 +1,9 @@
+{% extends "hola.html" %}
+
+{% block content %}
+    <ul>
+        {% for producto in productos %}
+            <li style="color: blue">Producto: {{ producto.nombre }} - precio: $ {{ producto.precio }}</li>
+        {% endfor %}    
+    </ul>
+{% endblock %}
